@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form_media.css">
+
+    <script src="https://kit.fontawesome.com/4f38b8c761.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="form-icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="container">
+            <h1 class="header">Login</h1>
+            <form action="" autocomplete="off">
+                <div class="email flex-col data">                   
+                    <input type="email" class="form-input"  id="email"> 
+                    <div class="complete-label flex">
+                        <label for="email" class=" form-label">Email </label>
+                        <span><i class="fa-regular fa-envelope"></i></span>
+                    </div>                   
+                </div>
+                <div class="password flex-col data">                   
+                    <input type="text" class="form-input" id="password">
+                    <div class="complete-label flex">
+                        <label for="password" class="form-label" >Password </label>
+                        <span><i class="fa-solid fa-lock"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <p>
+                    <input type="checkbox" name="" id="check" class="checkbox">
+                    <label for="check">Remember Me!</label>
+                    <a href="#" class="link">Forget Password?</a>
+                </p>
+                <p>
+                    Don't have an account?
+                    <a href="#" class="link">Register</a>
+                </p>
+                <button type="submit" class="submit-btn"><strong>Log In</strong></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

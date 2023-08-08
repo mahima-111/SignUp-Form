@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("sunset.svg");
+    background-color: #22222298;
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(59, 59, 59, 0.271);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(49, 49, 49, 0.769);
+    border-radius: 20px;
+    width: 30vw;
+    padding-block: 2rem;
+    overflow: hidden;
+    height: max-content;
+    padding-inline: 2rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    font-size: 3rem;
+    transition-duration: 0.4s;
+    margin-block-end: 1rem;
+}
+.header:hover{
+    color:aqua;
+    cursor: default;
+}
+.data {
+    margin-block: 2rem;
+}
+.complete-label,.complete-label span{
+    color:rgb(255, 255, 255);
+    font-size: 1.2rem;
+    transition-duration: 0.4s;
+}
+.form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.767);
+    outline: none;
+    height: 2rem;
+    font-size: 1rem;
+    color: rgba(228, 224, 224, 0.842);
+    transition-duration: 0.4s;
+}
+.form-input:focus {
+    border-bottom-color: aqua;
+}
+.form-input:focus + .complete-label, 
+.form-input:focus + .complete-label span{
+    color:aqua;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.link:hover{
+    color:aqua;
+}
+p{
+    margin-block: 1rem;
+    font-size: 1rem;
+}
+.submit-btn {
+    width: 100%;
+    padding-block: 0.6rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    transition-property: background-color, color;
+}
+.submit-btn:hover {
+    background-color: rgba(0, 255, 255, 0.755);
+    color: white;
+}
