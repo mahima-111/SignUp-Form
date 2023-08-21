@@ -101,3 +101,6 @@ p{
     background-color: rgba(0, 255, 255, 0.755);
     color: white;
 }
+.show-password{
+    margin-block-start: 1rem;
+}

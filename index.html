@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_media.css">
+    <script src="script.js" defer></script>
 
     <script src="https://kit.fontawesome.com/4f38b8c761.js" crossorigin="anonymous"></script>
 
@@ -24,13 +25,18 @@
                         <span><i class="fa-regular fa-envelope"></i></span>
                     </div>                   
                 </div>
-                <div class="password flex-col data">                   
-                    <input type="text" class="form-input" id="password">
+                <div class="password flex-col data">
+                    <div class="show-password">
+                        <input type="checkbox" id="show">
+                        <label for="show">Show Password</label>
+                    </div>                   
+                    <input type="password" class="form-input" id="password">
                     <div class="complete-label flex">
                         <label for="password" class="form-label" >Password </label>
                         <span><i class="fa-solid fa-lock"></i>
                         </span>
                     </div>
+                    
                 </div>
                 
                 <p>
